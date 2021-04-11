@@ -1,0 +1,16 @@
+1)SingleResponsibility_Cohesion
+-It is the degree to which various parts of Software component are related
+ (Doing similar task)
+eg: Segregated Waste    - has high cohesion
+    Unsegregated Waste  - has low cohesion
+HIGH COHESION is desirable
+
+
+2)SingleResponsibility_Coupling
+-It is the level of interdependency between various Software Components
+eg: Width of tracks
+    -Standard Guage Rail -- 1.4m wide
+    -Broad Gauge Rail -- 1.6m wide
+    This difference demands for 2 entirely different railway systems
+    -SO A TRAIN IS TIGHTLY COUPLED TO ITS TRACK
+LOOSE COUPLING is desirable

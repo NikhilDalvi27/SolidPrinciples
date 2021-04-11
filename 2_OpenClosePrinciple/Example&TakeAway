@@ -1,0 +1,22 @@
+eg: An Insurance company which is primarily Health Insurance
+    may later provide Vehicle and Home Insurance
+    The method for calculating discount for loyal customer
+    should be open for Modification in such cases
+
+
+OpenClose Provides
+1)Ease of adding new Features
+  -Translate to cost saving bcoz if OpenClose is not followed then to add
+   a new functionality we will have to modify the existing code
+   More number of changes -> More time on QA and Testing
+  -If Open Close is followed only the new code needs to be tested and
+   not the existing code
+2) Leads to minimal cost of developing and testing new feature
+3)Open Closed requires DECOUPLING which in turn automatically follows the
+  Single Responsibility Principle
+
+
+Caution
+1) Do not follow Open Close principle blindly - will endup with huge number
+   of classes that can complicate your overall design
+2) Do only when revamping design fixes certain kind of bug

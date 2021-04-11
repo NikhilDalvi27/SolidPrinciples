@@ -1,0 +1,25 @@
+1)Open-Close Principle
+-Software Components should be
+  Closed for Modification  &
+  Open for Extension
+
+
+For eg- In Nintendo
+    1)For Using the gun we just place the remote controller in the gun
+    2)For using the Steering Wheel just place the remote controller in the wheel
+    For the GUN and WHEEL functionality we did not do any changes to the CPU
+    So the CPU is closed for modification
+    but Open for adding on new accessories(Extension)
+
+
+1)Closed For Modification
+-New Features getting added to the Software component,
+ should not have to modify the existing Code
+
+2)Open for Extension
+-A Software component should be extendable
+ to add a new feature or add a new behaviour to it
+
+
+
+

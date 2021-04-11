@@ -1,0 +1,20 @@
+1)Liskov Substitution
+- Objects should be replaceable with their subtypes
+  without affecting the correctness of the program
+
+It wants us to move away from 'is A' way of thinking
+
+
+eg:  Inheritance -> 'is A' Relationship
+    1)Hatchback is a car
+    2)Gasoline is a fuel
+    3)Ostrich is a Bird
+
+    Here in the third example the Ostrich cannot fly
+    When Ostrich extends bird it overrides the fly method
+    and keeps the fly method unimplemented -- this is a Design Flaw
+
+
+-2 Solutions to Apply Liskov Substitution
+1)Breaking the Heirarchy
+2)Tell Don't Ask

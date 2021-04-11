@@ -1,0 +1,35 @@
+1) InterfaceSegregationPrinciple
+   -No Client should be forced to depend on methods it does not use
+
+
+   Eg:
+   You need to design a common interface for scanners, printers and fax machine
+   - So you design an Java interface for all in one XEROX work center which has all the scanner,printer and fax
+   -So things are good with XeroxWorkCentre Class which implements this common Interface...
+    since all the methods of interface are available on the XeroxWorkCentre Class
+   -But for HpPrinterScanner  methods corresponding to fax are not available
+    so HpPrinterScanner implements the interface and keeps the FAX related methods BLANK
+   - Similar with CannonPrinter class which only has printer methods available
+
+   Unimplemented Methods are always an indicative of poor design
+
+   Problem with Above
+   -If someone who is  (ideally)unaware of the implementation of CanonPrinter class,
+    sees the fax method in it and calls the fax method
+    the fax method is blank of which the user is unaware of
+    and the code will break
+
+
+    Techniques to Identify Violations of ISP
+   1)Fat Interfaces
+   -Interfaces with high number of methods
+
+   2) Interface with low Cohesion
+   -Methods which are not closely related to each other
+
+   3)Empty Implementations of Methods
+
+   --Single Interface should have Single Responsibility
+   --Also this allows us to use CanonPrinter class in place of IPrint Interface
+    obeying the LiskovSubstitution Principle
+    SOLID PRINCIPLES COMPLEMENT EACH OTHER

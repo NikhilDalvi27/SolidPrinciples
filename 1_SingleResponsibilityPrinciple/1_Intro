@@ -1,0 +1,20 @@
+SOLID
+S-Single Responsibility
+
+
+For Refactoring a Class -- Figure Out the Number of Reasons for it to Change
+
+Definition 1
+-Every Software Component Should have One and Only One Responsibility
+-Component can be a Class, Method or Module
+
+Definition 2
+-Every Software Component Should have One and Only One Reason to change
+(Because Number of Bugs increases with the increase in the Frequency Of Change)
+(If the Changes are related to One Other you can combine them)
+
+
+eg: Swiss Army Knife violates this Principle since it has multiple Functionality
+    (eg: It has can opener,scissors,screw driver,knife)
+
+

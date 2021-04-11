@@ -1,0 +1,5 @@
+
+
+Injecting the dependency into Product Catalog
+Instead of Product Catalog worrying about instantiating the dependency
+This is the concept of dependency Injection

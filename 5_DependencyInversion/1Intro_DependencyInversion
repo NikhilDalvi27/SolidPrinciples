@@ -1,0 +1,42 @@
+First Definition
+-High Level Modules should not depend on low level Modules
+-Both should Depend on  abstractions
+
+
+Second Definition
+-Abstraction should not depend on Details
+-Details should depend on Abstraction
+
+
+For eg: in Ecommerce Website
+
+ProductCatalog(High)            Payment Processor(High)                 CustomerProfile(High)
+        |  Depends         Depends    /      \  Depends                           |
+        |  on               on       /        \    on                             | Depends
+        V                           V          V                                  |  On
+ SQL Product Repository         GooglePay    Wire Transfer                        V
+        (Low)                   Gateway         (Low)                  (Low) Communication(High)
+                                (Low)                                  Depends /    \ Depends
+                                                                          on  /      \  on
+                                                                             V        V
+                                                                    (Low) Email      Voice (Low)
+                                                                         Sender       Dialer
+
+Here Above the Definition of the Principle is violated because
+the High Level Module is depending upon the low level Module
+
+SOLUTION
+
+ ProductCatalog(High)
+        |  Depends
+        |  on
+        V
+  Product Repository (Abstraction)
+        ^
+        |   Depends
+        |    on
+ SQL Product Repository  (Details)
+        (Low)
+
+Here we made Details to depend upon the Abstraction
+ which is called the Inversion of  Dependency
